@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
             builder: (BuildContext context, AsyncSnapshot snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting)
                 return Center(child: CircularProgressIndicator());
-              if (user == null)
+              //if (user == null)
                 return ListView(
                   scrollDirection: Axis.vertical,
                   padding: EdgeInsets.only(top: 0),
