@@ -29,7 +29,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> with TickerProviderStateMixin{
   TabController _tabController;
-  int pageIndex= 0;
+  int pageIndex= 2;
 
   @override
   void initState() {
@@ -60,7 +60,9 @@ class _HomeState extends State<Home> with TickerProviderStateMixin{
         child: HomeBlocInheritedWidget(
             homebloc: homeBloc,
             child: Scaffold(
+
               body: pagesList[pageIndex],
+
               bottomNavigationBar: MotionTabBar(
                 initialSelectedTab: "Noticias",
                 labels: const [

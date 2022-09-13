@@ -47,6 +47,7 @@ class _LoginForm extends State<LoginForm> {
           context);
     } else
       print('invalido');
+    print(response.statusCode);
   }
 
   void loginMethod() async {
